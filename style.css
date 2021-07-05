@@ -1,0 +1,239 @@
+#row-1{
+    display: flex;
+    justify-content: center;
+}
+#row-1 > .row-1-col-1{
+    background-color: rgb(175, 175, 32);
+    margin: 15px;
+    border-radius: 5px;
+}
+#row-1 > .row-1-col-2{
+    background-color: blue;
+    margin: 15px;
+    border-radius: 5px;
+}
+#row-1 > .row-1-col-3{
+    background-color: rgb(31, 201, 201);
+    margin: 15px;
+    border-radius: 5px;
+}
+#row-1 img{
+    margin: 15px 10px 15px 25px;
+    border-radius: 50px;
+    float: left;
+}
+#row-1 span{
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    color:white;
+    font-size: x-large;
+    margin-right: 80px;
+}
+#row-1  p{
+    color: white;
+    font-size: large;
+}
+#row-2{
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+    grid-template:"heading"
+                "programs"
+                "images"
+                "discription";
+                grid-template-rows:auto auto auto auto;
+
+}
+#row-2 > .heading{
+    grid-area: heading;
+    color: black;
+    font-size: x-large;
+    margin-top: 20px;
+    text-align: center;
+}
+#row-2 > .programs{
+    grid-area: programs;
+}
+#row-2 > .images{
+    grid-area: images;
+}
+#row-2 > .discription{
+    grid-area: discription;
+}
+.programs{
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template:"box-1 box-2 box-3 box-4";
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+}
+.programs > .box-1{
+    grid-area: box-1;
+    background-color: darkblue;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    font-size: large;
+}
+.programs > .box-2{
+    grid-area: box-2;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    font-size: large;
+}
+.programs > .box-3{
+    grid-area: box-3;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    font-size: large;
+}
+.programs > .box-4{
+    grid-area: box-4;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    font-size: large;
+}
+.box-1 span{
+    color: white;
+    text-align: center; 
+}
+.images{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template: "image-1 image-2 image-3";
+    grid-template-rows: auto;
+}
+.image-1{
+    grid-area: image-1;
+}
+.image-2{
+    grid-area: image-2;
+}
+.image-3{
+    grid-area: image-3;
+}
+.images > img{
+    border-radius: 5px;
+}
+.discription{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template: "desc-1 desc-2 desc-3";
+    grid-template-rows: auto;
+}
+.desc-1{
+    grid-area: desc-1;
+}
+.desc-2{
+    grid-area: desc-2;
+}
+.desc-3{
+    grid-area: desc-3;
+}
+.btn{
+    text-align: center;
+    margin:10px;
+    color: rgb(56, 72, 212);
+    border:1px solid rgb(56, 72,212);
+    padding:10px;
+    width: 150px;
+    border-radius: 3px;
+}
+
+@media(max-width:760px){
+    #row-2{
+        display: grid;
+        grid-gap: 30px;
+        justify-content: center;
+        grid-template:"heading"
+                    "programs"
+                    "images"
+                    "discription";
+                    grid-template-rows:auto auto auto auto;
+    
+    }
+    .programs{
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        grid-template:"box-1 box-2" 
+                        "box-3 box-4";
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+    }
+    .images{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template: "image-1"
+                    "image-2" 
+                    "image-3";
+        grid-template-rows: auto auto auto;
+    }
+    .discription{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template: "desc-1" 
+        "desc-2" 
+        "desc-3";
+        grid-template-rows: auto auto auto;
+    }
+}
+@media(max-width:640px){
+    #row-2{
+        display: grid;
+        grid-gap: 30px;
+        justify-content: center;
+        grid-template:"heading"
+                    "programs"
+                    "images"
+                    "discription";
+                    grid-template-rows:auto auto auto auto;
+    
+    }
+    .programs{
+        display: grid;
+        grid-gap: 10px;
+        justify-content: center;
+        grid-template:"box-1"
+                        "box-2" 
+                        "box-3" 
+                        "box-4";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+    }
+    .images{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template: "image-1"
+                    "image-2" 
+                    "image-3";
+        grid-template-rows: auto auto auto;
+    }
+    .discription{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template: "desc-1" 
+        "desc-2" 
+        "desc-3";
+        grid-template-rows: auto auto auto;
+    }
+}
